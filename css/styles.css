@@ -18,7 +18,7 @@ ul {
 }
 
 .header-inner {
-    min-height: 122px;
+    min-height: 249px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,6 +38,11 @@ ul {
     text-decoration: none;
 }
 
+.nav-item-link:hover {
+    filter: drop-shadow(-1px 8px 17px #000);
+    text-decoration: underline;
+}
+
 /*Burger */
 
 .burger-icon {
@@ -50,10 +55,26 @@ ul {
     width: 100%;
 }
 
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 30px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+}
+
 .main-article {
     font-weight: 400;
     font-size: 28px;
-    line-height: 22px;
+    line-height: 1;
     text-align: center;
     color: #000;
     margin-top: 42px;
@@ -87,6 +108,11 @@ ul {
 }
 
 .article-item {
+    width: 500px;
+    height: 394px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     margin-top: 60px;
     background: #000000;
 }
@@ -97,15 +123,9 @@ ul {
     font-size: 18px;
     line-height: 22px;
     color: #fff;
+    width: 400px;
 }
 
-.item-text-left {
-    padding: 94px 50px;
-}
-
-.item-text-right {
-    padding: 50px;
-}
 
 .bottom-textarea {
     position: relative;
@@ -130,6 +150,11 @@ ul {
     color: #ffffff;
     background: #000000;
     border-radius: 8px;
+    border: none;
+}
+
+.send-button:hover {
+    filter: drop-shadow(-1px 8px 17px #000);
 }
 
 #bottom-textarea {
@@ -265,7 +290,18 @@ ul {
 
     .article-items {
         display: block;
+        
+        width: 928px;
     }
+    
+    .article-item {
+        justify-content: flex-start;
+        width: 928px;
+        height: 214px;
+        margin-top: 60px;
+        background: #000000;
+    }
+
 
     .item-text-left,
     .item-text-right {
@@ -275,6 +311,7 @@ ul {
         color: #fff;
         padding: 48px;
         margin-bottom: -28px;
+        width: auto;
     }
 
     .bottom-textarea {
@@ -433,7 +470,17 @@ ul {
     }
 
     .article-items {
-        display: block;
+        display: flex;
+        width: 335px;
+        margin-bottom: 26px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .article-item {
+        width: 335px;
+        height: 350px;
     }
 
     .item-text-left,
@@ -475,6 +522,7 @@ ul {
         text-align: center;
         color: #ffffff;
         background: #000000;
+        border: none;
         border-radius: 8px;
     }
 }
